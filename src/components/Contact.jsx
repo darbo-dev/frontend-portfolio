@@ -28,7 +28,7 @@ const Contact = () => {
         
       }
     } catch (error) {
-      toast.error(" Something went wrong.");
+      toast.error(" Something went wrong");
     }
   };
 
