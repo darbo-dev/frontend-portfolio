@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from 'react-hot-toast'
+import api from "../../api";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -11,9 +12,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const res = await fetch("https://portfolio-backend-production-b665.up.railway.app/api/contact", {
+      const res = await api.post('/api/contact', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
