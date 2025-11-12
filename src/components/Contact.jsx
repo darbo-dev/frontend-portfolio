@@ -13,7 +13,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('https://backend-portfolio-production-2405.up.railway.app/api/contact', {
+      const res = await fetch('https://devdarbazbc-production.up.railway.app/api/contact', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
