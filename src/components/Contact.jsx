@@ -17,13 +17,15 @@ const Contact = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      });
+      })
+      
       const data = await res.json();
       if (data.success) {
         toast.success(" Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
-      } else {
+      } else{
         toast.error('Failed to send message')
+        
       }
     } catch (error) {
       toast.error(" Something went wrong.");

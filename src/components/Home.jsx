@@ -12,7 +12,6 @@ const Home = () => {
       className="w-full mt-16 min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 border-b border-cyan-900"
     >
       <div className="max-w-5xl grid grid-cols-1 lg:grid-cols-2 items-start gap-12">
-        {/* Left side — text */}
         <div className="flex flex-col space-y-6">
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-medium">
             Full Stack{' '}
@@ -36,8 +35,6 @@ const Home = () => {
             </ScrollLink>
           </div>
         </div>
-
-        {/* Right side — image */}
         <div className="flex justify-center lg:justify-end">
           <img
             src={avatar}
