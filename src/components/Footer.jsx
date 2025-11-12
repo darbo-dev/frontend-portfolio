@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
@@ -35,10 +35,14 @@ const Footer = () => {
             <a
             target="_blank"
             href="https://www.instagram.com/journeywithmern/"
-            className="hover:text-cyan-400 transition-colors"
+            className="hover:text-cyan-400 cursor-pointer transition-colors"
           >
             <FaInstagram />
           </a>
+        </div>
+        <div className="flex gap-1 items-center m-2">
+            <FaPhone />
+            <span>07733803031</span>
         </div>
         <div>
             <ScrollLink to="Home" smooth={true} duration={500} className="text-sky-500">Scroll to top</ScrollLink>
